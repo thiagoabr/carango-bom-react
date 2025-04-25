@@ -3,7 +3,6 @@ import style from './Usuario.module.scss';
 import { listarUsuarios } from '../../services/usuario.service';
 import { useRecoilState } from 'recoil';
 import { listaUsuarioAtom } from '../../atoms/listaUsuarioAtom';
-import { Usuario } from '../../types/usuario.type';
 
 export default function ListaUsuarios() {
   const [usuarios, setUsuarios] = useRecoilState(listaUsuarioAtom);
